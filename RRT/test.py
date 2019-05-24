@@ -3,9 +3,9 @@ from rrt import *
 map_ = map()
 pint = [0.5,0.5]
 goal = [7.5,4.5]
-K = 400
-dq = 0.2
-Threshold = 0.2
+K = 400 #迭代此时
+dq = 0.2 #拓展距离
+Threshold = 0.2 #是否到达终点的阈值
 T=[]
 path = []
 result = buildRRT(pint,goal,K,dq,Threshold,map_,T,path)
